@@ -7,8 +7,81 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
     height: 100vh;
     text-align: center;
-    background-color: rgb(135, 116, 135);
+    background-color: #f9f7fe;
+    font-family: Arial, Helvetica, sans-serif;
 }  
+
+a {
+    color: #885df1;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    margin: 120px auto;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.5;
+    color: #272044;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+main {
+    
+}
+
+form {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px 0px rgba(39,33,66, 0.5);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.instructions {
+    padding: 16px; 
+    border: 1px solid rgba(39,33,66, 0.5);
+    width: 80%;
+    font-size: 16px;
+    border-radius: 50px;
+    line-height: 20px;
+    color: #272044;
+}
+
+.button {
+    margin-left: 10px;;
+    padding: 14px 24px;
+    width: 150px;
+    border: none;
+    background-color: #885df1;
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.poem {
+    font-size: 16px;
+    background-color: #fff;
+    padding: 20px;
+    line-height: 2;
+    border-left: 3px solid #885df1;
+    border-right: 3px solid #885df1;
+    box-shadow: 0px 4px 30px 0px rgba(39,33,66, 0.5);
+}
+
+footer {
+    font-size: 13px;
+    margin-top: 30px;
+}
