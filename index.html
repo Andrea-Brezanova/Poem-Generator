@@ -14,9 +14,10 @@
             <h1>AI Poem Generator</h1>
         </header>
         <main>  
+            <div class="form-container">
                 <form action="" id="poem-generator-form">
                     <input type="text" 
-                        placeholder="Enter the topic of the poem" 
+                        placeholder="What should be your poem about?" 
                         autofocus 
                         required
                         autocomplete = "off"
@@ -25,8 +26,10 @@
                     />
                     <input type="submit" class="button">
                 </form>
-                <div class="poem" id="poem">
-                </div>          
+                <div class="hint">e.g: Love, Happiness, Friends... </div>
+            </div>
+            <div class="poem hidden" id="poem">
+            </div>          
         </main>
         <footer>This project was coded by 
             <a href="https://www.linkedin.com/in/andrea-brezanova/">Andrea Brezanova</a> and is 

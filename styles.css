@@ -35,18 +35,25 @@ header {
     margin-bottom: 30px;
 }
 
-main {
-    
+
+form {  
+    display: flex;
+    flex-direction: row;  
 }
 
-form {
-    padding: 30px;
+.form-container {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 30px 0px rgba(39,33,66, 0.5);
-    display: flex;
-    flex-direction: row;
     margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 15px 20px; 
+    box-shadow: 0px 4px 30px 0px rgba(39,33,66, 0.5);
+}
+
+.hint {
+    line-height: 1.5;
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.7;
 }
 
 .instructions {
@@ -71,7 +78,8 @@ form {
     cursor: pointer;
 }
 
-.poem {
+.poem {  
+    display: none;
     font-size: 16px;
     background-color: #fff;
     padding: 20px;
@@ -81,11 +89,22 @@ form {
     box-shadow: 0px 4px 30px 0px rgba(39,33,66, 0.5);
 }
 
-.poem strong {
+
+#poem strong{
     color: #885df1;
 }
 
 footer {
     font-size: 13px;
     margin-top: 30px;
+}
+
+.generating {
+    animation: blink 1s infinite step-start 0s infinite;
+}   
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
