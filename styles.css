@@ -79,7 +79,7 @@ form {
 }
 
 .poem {  
-    display: none;
+    
     font-size: 16px;
     background-color: #fff;
     padding: 20px;
@@ -94,17 +94,27 @@ form {
     color: #885df1;
 }
 
+.hidden {
+    display: none;
+}
+
 footer {
     font-size: 13px;
     margin-top: 30px;
 }
 
 .generating {
-    animation: blink 1s infinite step-start 0s infinite;
+    animation: blink-animation 1s steps(5, start) infinite;
 }   
 
-@keyframes blink {
-    50% {
-        opacity: 0;
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
     }
 }
